@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #191C21;
+  position: fixed;
+  top: 0px;
+  box-sizing: border-box;
+}
+#navbar #navLeft {
+  width: 40vw;
+  float: left;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  color: #FFFFFF;
+  height: 50px;
+  box-sizing: border-box;
+}
+#navbar #navRight {
+  width: 60vw;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+}
+#navbar #navRight a {
+  color: #FFFFFF;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 12.5px;
+  background-color: #191C21;
+}
+#navbar #navRight a:hover {
+  background-color: #A0A0A0;
+}
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #191C21;
+  position: fixed;
+  top: 0px;
+  box-sizing: border-box;
+}
+@media (min-width: 500px) {
+  #navbar {
+    width: 20%;
+    height: 100vh;
+  }
+}
+#fullpage {
+  box-sizing: border-box;
+  float: right;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  #fullpage {
+    width: 80%;
+  }
+}
+.section {
+  text-align: center;
+}
+.vert-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 6em;
+  font-family: arial,helvetica;
+  color: #fff;
+  margin: 0;
+}

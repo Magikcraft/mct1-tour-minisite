@@ -10,8 +10,7 @@
     <meta name="Resource-type" content="Document" />
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/framework.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- <script src="js/jquery.js"></script> -->
@@ -21,57 +20,60 @@
 	<script type="text/javascript" src="js/script.js"></script>
 
 </head>
-<body>
-
-<ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-	<li data-menuanchor="fourthPage"><a href="#fourthPage">Four</a></li>
-</ul>
-
-<div id="fullpage">
-    <div class="section " id="section0">
-        <!-- <div class="intro">
-            <img src="imgs/1.png"  alt="1"/>
-            <h1>Normal scrolling</h1>
-            <p>With a linked menu</p>
-		</div> -->
-		<div class="cols">
-			<div><h2>col1</h2></div>
-			<div><h2>col2</h2></div>
-			<div><h2>col3</h2></div>
+<body >
+    <div id="fullpage">
+        <div class="section vert-align" id="section0">
+            <h1> Intro Page / Homescreen </h1>
+        </div>
+        <!-- Story Section -->
+        <div class="section vert-align" id="section1">
+            <h1> Normal Beginning </h1>
+        </div>
+        <div class="section vert-align" id="section2">
+            <h1> Struck By Lighting </h1>
+        </div>
+        <div class="section vert-align" id="section3">
+            <h1> Gain powers and T1D </h1>
+        </div>
+        <div class="section vert-align" id="section4">
+            <h1> Death & Trainning </h1>
+        </div>
+        <div class="section vert-align" id="section5">
+            <h1> Become a wizard </h1>
+        </div>
+        <div class="section vert-align" id="section6">
+            <h1> Dungeon Quest </h1>
+        </div>
+        <!-- Mechanics Section -->
+        <div class="section vert-align" id="section7">
+            <h1> Mechanics -> UI </h1>
+            <p> BGL Bar: Indicates the players BGL <br> Insulin Bar: Indicates the players Insulin</p>
+            <p> Food Bars: Indicates the rate of digesion,  </p>
+        </div>
+        <div class="section vert-align" id="section8">
+            <h1> Mechanics -> Normal BGL </h1>
+            <p> Use of POWERS: Lighning Strike, Increased Jump </p>
+        </div>
+        <div class="section vert-align" id="section9">
+            <h1> Mechanics -> Abnormal BGL </h1>
+            <p> Gain SYMPTOMS: Blindless, Slowness, Posion, Damage, Death </p>
+        </div>
+        <!-- Conclusion Section -->
+        <div class="section vert-align" id="section10">
+            <h1> Magikcraft -> About Us </h1>
         </div>
     </div>
-    <div class="section" id="section1">
-        <div class="slide" id="slide1">
-            <div class="intro">
-                <h1>URL get updated (#)</h1>
-                <p>
-                    Easy to bookmark and share
-                </p>
-            </div>
-        </div>
 
-        <div class="slide" id="slide2">
-            <h1>Horizontal sliders!</h1>
-            <img src="imgs/iphone-blue.png" alt="iphone" id="iphone-two" />
+    <div id="navbar">
+        <div id="navLeft">
+            <span>MCT1 & Magikcraft</span>
         </div>
-
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
-            <h1>Just use </h1>
-            <p>autoScrolling:false</p>
-        </div>
-	</div>
-	<div class="section" id="section3">
-        <div class="intro">
-            <h1>Just use </h1>
-            <p>autoScrolling:false</p>
+        <div id="navRight">
+            <a href="#homePage">First slide</a>
+            <a href="#secondPage">Second slide</a>
+            <a href="#thirdPage">Third slide</a>
+            <a href="#fourthPage">Four</a>
         </div>
     </div>
-</div>
-
 </body>
 </html>

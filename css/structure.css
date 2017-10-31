@@ -1,0 +1,33 @@
+@charset "UTF-8";
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #191C21;
+  position: fixed;
+  top: 0px;
+  box-sizing: border-box;
+}
+@media (min-width: 500px) {
+  #navbar {
+    width: 20%;
+    height: 100vh;
+  }
+}
+#fullpage {
+  box-sizing: border-box;
+  float: right;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  #fullpage {
+    width: 80%;
+  }
+}
+.section {
+  text-align: center;
+}
+.vert-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
