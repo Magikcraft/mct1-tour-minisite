@@ -1,0 +1,42 @@
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+}
+.intro p{
+	color: #fff;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+
+.cols {
+	display: flex;
+	/* align-items: stretch; */
+	justify-content: space-around;
+}
+
+.cols div {
+	flex: 1 1 200px;
+	background-color: white;
+	min-height: 200px;
+	margin-left: 20px;
+	height: 70vh;
+}
+
+.cols div:last-of-type {
+	margin-right: 20px;
+}
