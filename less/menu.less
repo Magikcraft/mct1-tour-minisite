@@ -7,12 +7,56 @@
     #navLeft {
         width: 40vw;
         float: left;
-        display: flex;
-        justify-content: flex;
-        align-items: center;
+        display: block;
         color: @colour-white;
         height: @size-smallNavHeight;
         box-sizing: border-box;
+
+        img {
+            display: block;
+            margin: auto;
+            padding: 5px;
+            height: @size-smallNavHeight - 10;
+            width: @size-smallNavHeight - 10;
+            float: left;
+
+            @media @mq-desktop-max {
+                height: initial;
+                width: 34%;
+                margin-top: 10px;
+                margin-left: 33%;
+                margin-right: 33%;
+                display: block;
+            }
+        }
+
+        span {
+
+            display: block;
+
+            @media @mq-desktop-max {
+                margin: auto;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 1.4rem;
+            }
+        }
+
+        @media @mq-desktop-max {
+            width: 100%;
+            display: flex;
+            height: initial;
+
+            flex-direction: column;
+            justify-content: flex-start;
+            box-sizing: border-box;
+
+            br {
+                display: none;
+                visibility: hidden;
+            }
+        }
     }
 
     #navRight { 
@@ -23,15 +67,40 @@
         align-items: center;
         height: @size-smallNavHeight;
         box-sizing: border-box;
+
+        @media @mq-desktop-max {
+            flex-direction: column;
+            justify-content: flex-start;
+            height:100%;
+            float:left;
+            width: 100%;
+            padding-top: @size-smallNavHeight / 2;
+            text-align: center;
+        }
+
         a {
             color: @colour-white;
             list-style-type: none;
             text-decoration: none;
             padding: @size-smallNavHeight / 4;
             background-color: @colour-dark;
+
+            @media @mq-desktop-max {
+                display: block;
+                width: 96%;
+                padding: 5px;
+                text-align: center;
+                padding-top: @size-smallNavHeight / 3;
+                padding-bottom: @size-smallNavHeight / 3;
+            }
         }
         a:hover {
-            background-color: @colour-grey;
+            background-color: @colour-black;
+            border-bottom: @colour-red solid medium;
+            @media @mq-desktop-max {
+                border-bottom: none;
+                border-left: @colour-red solid thick;
+            }
         }
     }
 }
