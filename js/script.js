@@ -22,6 +22,6 @@ function replaceHash(hash) {
 }
 
 var redirects = {
-    "#tutorial-eatfood":"#8page",
-    "#tutorial-takeinsulin":"#9page"
+    "#training-eatfood":"#8page",
+    "#training-takeinsulin":"#9page"
 };
