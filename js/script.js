@@ -5,5 +5,23 @@ $(document).ready(function() {
 			sectionsColor:  ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'black' ],
             autoScrolling: false,
             keyboardScrolling: true,
-	});
+    });
+
+    var hash = getHash();
+    if(redirects[hash]) {
+        replaceHash(redirects[hash]);
+    }
 });
+
+function getHash() {
+    return window.location.hash.toLowerCase();
+}
+
+function replaceHash(hash) {
+    window.location.hash = hash;
+}
+
+var redirects = {
+    "#tutorial-eatfood":"#8page",
+    "#tutorial-takeinsulin":"#9page"
+};

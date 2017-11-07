@@ -69,13 +69,11 @@
         box-sizing: border-box;
 
         @media @mq-desktop-max {
-            flex-direction: column;
-            justify-content: flex-start;
+            display: block;
             height:100%;
             float:left;
             width: 100%;
-            padding-top: @size-smallNavHeight / 2;
-            text-align: center;
+            text-align: left;
         }
 
         a {
@@ -87,20 +85,17 @@
 
             @media @mq-desktop-max {
                 display: block;
-                width: 96%;
-                padding: 5px;
-                text-align: center;
-                padding-top: @size-smallNavHeight / 3;
-                padding-bottom: @size-smallNavHeight / 3;
+                padding: none;
+                background-color: @colour-grey;
             }
         }
         a:hover {
-            background-color: @colour-black;
+            background-color: @colour-white;
             border-bottom: @colour-red solid medium;
+
             @media @mq-desktop-max {
                 border-bottom: none;
-                border-left: @colour-red solid thick;
             }
-        }
+        } 
     }
 }
