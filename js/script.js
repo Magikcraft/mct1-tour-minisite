@@ -13,6 +13,7 @@ $(document).ready(function() {
     }
 });
 
+//
 function getHash() {
     return window.location.hash.toLowerCase();
 }
